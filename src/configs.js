@@ -7,8 +7,8 @@ import {
 } from './constants/pageData';
 
 const configs = {
-  title: 'Tomas Gonzalez',
-  subTitle: 'Dev portfolio.',
+  title: 'Clara Nolan',
+  subTitle: 'Dev & Design Portfolio',
   stars: {
     maxSize: 20,
     emissionIntencity: 40,
@@ -16,7 +16,7 @@ const configs = {
     // url: 'icons/three-js-logo.png',
     dencity: 900,
   },
-  navTitle: 'Tomas Gonzalez portfolio.',
+  navTitle: 'Clara Nolan Portfolio',
   relevantStops: STOPS,
   pages: [
     {
@@ -26,10 +26,10 @@ const configs = {
       displayAt: displayAt('About'),
       title: 'Who Am I?',
       infos: [
-        "* I'm a maker, a curious thinker who enjoys learning and comprehending how things function.",
-        '* My journey as a software developer started when I was a just a kid trying to figure out how video games where made.',
-        '* I started my career as a front-end developer around 6 years ago in 2017, and since then I have helped many startup companies and non-profit organizations to develop quality products.',
-        '* I have a wide range of skills, of which I can say that I’ve mastered many.',
+        "* I'm a current student at the University of Pennsylvania studying Design & Computer Science. I'm passionate about web accessibility, computer graphics, and the intersection between art and computer graphics.",
+        '* My framework towards both my development and design work is to use technology as an enabling device to ensure a vast array of users can have the best possible experience.',
+        '* Outside of work, I am involved in gender equity work through being on the board of the Penn Association for Gender Equity and continuing to learn more about visual techniques by being a member of SIGGRAPH.',
+        '* Personal evolution and constant acesis is what I live by, and I bring this mentality to my works as well.',
       ],
     },
     {
@@ -55,7 +55,7 @@ const configs = {
       displayAt: displayAt('Download CV'),
       rotation: [0, 0, 0],
       position: [0, 0, PAGE_DEPH_MARGIN],
-      title: 'Here is my CV!',
+      title: 'Here is my Resume',
       footer: 'Click the icon above to view!',
       imageList: {
         rows: 1,
