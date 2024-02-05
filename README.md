@@ -1,2 +1,2 @@
-# -clara-nolan.github.io
+# clara-nolan.github.io
 my personal website
