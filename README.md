@@ -1,53 +1,61 @@
-# Personal portfolio
+# What is 3d-portfolio?
 
-[![Site preview](/public/site-preview.png)](https://hamishw.com)
+It is a highly customizable dev portfolio template that features astonishing 3D graphics by taking advantage of webGL.
 
-My design portfolio to showcase a few projects. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://hamishw.com) or check out a live version of the [components storybook](https://storybook.hamishw.com).
+It is built using [threejs](https://github.com/mrdoob/three.js), [react-three-fiber](https://github.com/pmndrs/react-three-fiber), and [@react-three/drei](https://github.com/pmndrs/drei).
 
-## Install & run
+Created by Tomas Gonzalez.
 
-Make sure you have nodejs `18.0.0` or higher and npm `8.6.0` or higher installed. Install dependencies with:
+# Example: 
+https://tomasgonzalez.github.io/3d-portfolio/
 
-```bash
-npm install
-```
+https://user-images.githubusercontent.com/26396804/193622132-c7e12305-3cbf-4c4c-8992-2f58104a5068.mp4
 
-Once it's done start up a local server with:
 
-```bash
-npm run dev
-```
+# Get started!
 
-To view the components storybook:
+## First
 
-```bash
-npm run storybook
-```
+Start by `forking` this repository, then clone your forked copy and navigate to the root directory.
 
-## Deployment
+## Install the dependencies with: 
 
-I've set up the site using Cloudflare for hosting. Deploy the site to Cloudflare Pages:
+### `yarn`
 
-```bash
-npm run deploy
-```
+## Then start the development server with:
 
-## Permissions
+### `yarn start`
 
-I'm cool with anyone using the code or parts of the code for their own site, it is open source so people can learn from it and adapt it. However, I would encourage you to modify the theme and components it to make it your own. If you are using the site's design largely unmodified, I'd appreciate being credited as the designer of the website.
+This runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-I do not give permission to present any of my projects as your own (this is being actively used as my portfolio site and these are my real projects I've worked on).
+The page will reload when you make changes.
+You may also see any lint errors in the console.
 
-## FAQs
+## Modify the template to your taste.
 
-<details>
-  <summary>How do I change the color on the <code>DisplacementSphere</code> (blobby rotating thing in the background).</summary>
-  
-  You'll need to edit the fragment shader. [Check out this issue for more details](https://github.com/HamishMW/portfolio/issues/19#issuecomment-870996615).
-</details>
+There is no coding required to configure the pages of the portfolio. 
+All the settings that you will ever need to touch are set inside the 
 
-<details>
-  <summary>How do I get the contact form to work?</summary>
-  
-  To get the contact form working create an AWS account and set up SES (Simple Email service). Then plug in your details into `.dev.vars.example` and rename it to `.dev.vars`. You'll also need to add these as enviroment variables in the Cloudflare dashboard for it to work in production. Or if you don't mind sending through gmail use [nodemailer](https://nodemailer.com/) instead.
-</details>
+`src/configs.js`, `./constants/pageData.js`, and `src/theme.js`
+
+## Video tutorial:
+
+https://youtu.be/fC7e2ONfhUc
+
+## Deploy to github pages
+
+First make sure to create a `gh-pages` branch.
+
+After pushing the branch to GitHub, head over to the `Settings` page of the repository and select in the `GitHub Pages` section the `gh-pages` branch as source.
+
+After that run:
+
+### `yarn deploy`
+
+And thats It! It will automatically deploy to `https://{username}.github.io/{repo-name}`
+
+# More info
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/tomasgonzalez)
+
