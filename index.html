@@ -1,1 +1,160 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="./favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="This is my personal portfolio, made by https://github.com/TomasGonzalez"/><link rel="apple-touch-icon" href="./logo192.png"/><link rel="manifest" href="./manifest.json"/><title>Tomas Gonzalez Portfolio</title><script defer="defer" src="./static/js/main.aca636cf.js"></script><link href="./static/css/main.8acdb0c0.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clara's Playground</title>
+        <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        
+        <style>
+        #drag-box {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #000;
+            display: center;
+            position: relative; /* Allows absolute positioning inside the box */
+            overflow: hidden; /* Keeps the image inside the box */
+        }
+        img {
+            cursor: move; /* Indicates the image can be moved */
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class=sidebar-group>
+            <div class=sidebar>
+                <div class=title-bar>
+                    Welcome! <div class=right>x</div>
+                </div>
+                <div class=inner>
+                    <p>My name is Clara and I love anything involved with computer graphics, design, and creative coding.
+                    </p>
+                    <p>
+                        Here you can find some of my projects and art works.
+                    </p>
+                </div>
+            </div>
+            
+            <div class=sidebar-box>
+                <div class=mini-sidebar>
+                    <div class=title-bar>
+                        Profile <div class=right>x</div>
+                    </div>
+                    <div class=inner>
+                        <br>
+                        <center>
+                            <img src="/snuffkin.jpg" class=icon height=100px width=100px>
+                        </center>
+                        <p> I'm also a big Moomin fan.</p>
+                    </div>
+                </div>
+                <div class=mini-sidebar>
+                    <div class=title-bar>
+                        My Projects <div class=right>x</div>
+                    </div>
+                    <div class=inner>
+                    
+                            <a href="portfolio.html"><h3>Link to my coding and art projects!</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class=wide-sidebar>
+                <div class=title-bar>
+                    My Socials
+                </div>
+                <div class=inner>
+                    <p> <a href="https://github.com/clara-nolan"> Github </a> </p>
+                      <p>  <a href="https://www.linkedin.com/in/clara-nolan/"> LinkedIn </a> </p>
+                       <p> <a href="https://www.instagram.com/kunstpleb/"> Instagram </a> </p>
+                      
+                    </p>
+                    <p> Credit to EGGRAMEN for creating the original template I used for this website.</p>
+                </div>
+            </div>
+        </div>
+        <div class=box>
+            <div class=box-title-bar>
+                Collage <div class=right>x</div>
+            </div>
+            <div class=inner>
+                <iframe src="https://app.landing.space/boards/Drb9QWqUhtEV" width="100%" height="790px" frameBorder="0" style="border: 0;"></iframe>
+                <p> My most recent Pinterest dump :0</p>
+            </div>
+        </div>
+        <div class=box>
+            <div class=box-title-bar>
+                Wie gehts? <div class=right>O</div>
+            </div>
+            <div class=inner>
+             <p>Sprechen Sie Deutsch?</p>
+    <button id="yes">Ja</button>
+    <button id="no">Nein</button>
+    <p id="response"></p>
+
+    <script src="script.js"></script>
+    
+    <div id="drag-box">
+    <img src="bernd.gif" alt="Draggable Image" draggable="true" id="draggableImage">
+</div>
+
+<script src="script.js"></script>
+            </div>
+        </div>
+        <div class=box>
+            <div class=box-title-bar>
+                ASCII Art in Real Time <div class=right>x</div>
+            </div>
+            <div class=inner>
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+                
+                <form>
+                 Provide Text:<br> <input type="text" id="myText" name="provided text">
+         <br>
+    
+      </form>
+    <script src="sketch.js"></script>
+              <div class="ascii-box"></div>
+
+    
+            </div>
+        </div>
+        <div class=box>
+            <div class=box-title-bar>
+                ┴┬┴┤･ω･)ﾉ├┬┴┬┴ <div class=right>x</div>
+            </div>
+            <div class=inner>
+
+<pre>
+
+  _                    _         _      _     
+ | |                  | |       | |    | |    
+ | | ___   _ _ __  ___| |_ _ __ | | ___| |__  
+ | |/ / | | | '_ \/ __| __| '_ \| |/ _ \ '_ \ 
+ |   <| |_| | | | \__ \ |_| |_) | |  __/ |_) |
+ |_|\_\\__,_|_| |_|___/\__| .__/|_|\___|_.__/ 
+                          | |                 
+                          |_|                 
+
+</pre>
+
+<br>
+<br>
+<div id="gridoverlay"></div>
+
+
+            </div>
+        </div>
+         <div id="wrapper">
+  <div id="marquee">
+  The true picture of the past flits by. The past can be seized only as an image which flashes up at the instant when it can be recognized and is never seen again. ‘The truth will not run away from us’: in the historical outlook of historicism these words of Gottfried Keller mark the exact point where historical materialism cuts through historicism. For every image of the past that is not recognized by the present as one of its own concerns threatens to disappear irretrievably. (The good tidings which the historian of the past brings with throbbing heart may be lost in a void the very moment he opens his mouth.)
+  </div>
+</div>
+</body>
+</html>

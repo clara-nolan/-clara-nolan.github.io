@@ -1,0 +1,143 @@
+html{
+  /*Set some global colors here for quick re-coloring of stuff!*/
+  --bg-color:  purple;
+  --darker-color: black;
+  --lighter-color:  #D7ADE8;
+  --accent-color: white;
+
+  --sidebar-width:140px;
+  background-color: var(--bg-color);
+  background-image: url(); /*add image url for tiled background*/
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	color: var(--darker-color);
+	background-color: var(--lighter-color);
+}
+body {
+	line-height: 1.3;
+	background-color: var(--bg-color);
+	text-align: center;
+	margin:0px 10px 0px;
+}
+ol, ul {
+	list-style: none;
+	list-style-type: square;
+}
+
+h1 {
+	width: calc(100% - 20px);
+	font-size: 3em;
+	font-weight: bold;
+	padding: 25px 10px 10px;
+}
+h1 img{
+	width: 100%;
+	max-width:720px;
+}
+
+h2{
+	font-size: 2em;
+	font-weight:bold;
+	padding: 10px 8px 10px;
+}
+
+.boxgallery{
+	margin: auto;
+	padding:15px 30px 15px;
+	max-width: 100%;
+	display: flex;
+	flex-flow: row-reverse wrap-reverse;
+	justify-content: center;
+	background-color: var(--darker-color);
+}
+
+.box{
+	display: block;
+	position: relative;
+	min-width: 300px;
+	max-width: 400px;
+	min-height: 300px;
+	margin: 5px;
+	flex-grow: 1;
+	background-color: var(--accent-color);
+	background-position: center;
+	background-size:cover;
+	border: 4px solid var(--accent-color);
+}
+
+.boxHover{
+	position: absolute;
+	top: 0;
+	bottom:0;
+	padding: 15px 0px 30px;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+	display:flex;
+	flex-flow: column nowrap;
+	overflow: hidden;
+}
+
+.boxHover:hover{
+	opacity: 1;
+	background: grey;
+	background: rgba(0, 0, 0, 0.5);
+	transition: opacity 0.6s;
+}
+
+.box a, .box p{
+	display: inline-block;
+	width: 90%;
+	margin:auto;
+	color:white;
+	font-size: 130%;
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+
+.boxHover:hover a, .boxHover:hover p{
+	opacity: 1;
+}
+
+.content{
+	background-color: white;
+	border: 4px solid white;
+	margin: auto;
+	margin-bottom: 15px;
+	text-align: left;
+	max-width: 1300px;
+}
+
+p{
+	padding: 10px 12px 10px;
+}
+
+footer{
+	width: 100%;
+}
